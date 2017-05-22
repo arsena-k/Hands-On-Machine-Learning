@@ -10,7 +10,7 @@
 rm(list = ls(all=TRUE))
 
 #tell R what your working directory is (i.e., the folder that has the data file(s) you want to load into R). Note that the my working directory's address is in double quotation marks, and I used foward slashes not backward slashes). Also, you can't use a zipped folder as a working directory so it needs to be unzipped first.
-setwd("C:/Users/Alina Arseniev/Dropbox/DRESSUP_Spring2017/texts")
+setwd("")
 
 #check your current working directory
 getwd()
@@ -31,7 +31,7 @@ filenames
 #STEP 2: Load your Data into R. Your data should be in your working directory.
 
 
-corpus <- Corpus(DirSource(directory="C:/Users/Alina Arseniev/Dropbox/DRESSUP_Spring2017/texts")) #need to get your data into a "corpus" format which can then be turned into a Document-Term Matrix format, since the TopicModels package is trained using this matrix. Can do all this reshaping using the TM pacakge.
+corpus <- Corpus(DirSource(directory="")) #need to get your data into a "corpus" format which can then be turned into a Document-Term Matrix format, since the TopicModels package is trained using this matrix. Can do all this reshaping using the TM pacakge.
 corpus #note 150 documents, so you have a quick check that all 150 documents in folder "texts" loaded in
 
 
